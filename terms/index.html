@@ -5,98 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terms of Service — Full House</title>
 <meta name="description" content="The terms that govern your use of Full House.">
+<link rel="canonical" href="https://support490.github.io/fullhouse/terms/">
+<link rel="icon" href="/fullhouse/assets/icon-256.png">
+<meta name="theme-color" content="#0c1f1a">
 <style>
-:root{--felt:#0d5c3f;--felt-dark:#0a4a32;--cream:#faf8f2;--ink:#22302a;--muted:#5d6b63;--gold:#c9a227;--line:#e6e1d5;--link:#0d6b46}
+@font-face{font-family:'DM Sans';font-weight:400;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-400.ttf) format('truetype')}
+@font-face{font-family:'DM Sans';font-weight:500;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-500.ttf) format('truetype')}
+@font-face{font-family:'DM Sans';font-weight:700;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-700.ttf) format('truetype')}
+@font-face{font-family:'JetBrains Mono';font-weight:400;font-display:swap;src:url(/fullhouse/assets/fonts/JetBrainsMono-400.ttf) format('truetype')}
+:root{--surface:#0c1f1a;--raised:#0f2a22;--deep:#071512;--line:#22332f;--ink:#fff;--ink2:#cacecd;--muted:#9ea5a3;--accent:#5dcaa5;--gold:#f7c948;--on-accent:#0c1f1a}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--felt);background-image:radial-gradient(130% 120% at 50% 0%,#11704e 0%,var(--felt) 45%,var(--felt-dark) 100%);line-height:1.65}
-header.site{display:flex;align-items:center;gap:10px;padding:22px 20px;max-width:780px;margin:0 auto}
-.logo{font-weight:800;letter-spacing:.3px;color:var(--cream);font-size:19px;text-decoration:none}
-.logo .suit{color:var(--gold)}
-.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
-.card{background:var(--cream);border-radius:18px;padding:clamp(24px,5vw,40px);box-shadow:0 18px 40px rgba(0,0,0,.28)}
-h1{margin:0 0 4px;font-size:clamp(26px,6vw,32px);line-height:1.2}
-h2{margin:30px 0 8px;font-size:19px;color:var(--felt-dark)}
-.updated{color:var(--muted);font-size:14px;margin:0 0 18px}
-p,li{font-size:16px}a{color:var(--link)}ul{padding-left:22px}
-.lede{font-size:17px}
-.note{background:#fff7e0;border:1px solid #f0e2b0;border-radius:12px;padding:14px 16px;font-size:15px;margin:16px 0}
-nav.docnav{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px;padding-top:18px;border-top:1px solid var(--line);font-size:15px}
-footer.site{max-width:780px;margin:0 auto;padding:22px 20px 44px;color:rgba(250,248,242,.7);font-size:13px;text-align:center}
-footer.site a{color:rgba(250,248,242,.92)}
+body{margin:0;background:var(--surface);background-image:radial-gradient(120% 70% at 50% -10%,#0f2a22 0%,var(--surface) 60%);min-height:100vh;color:var(--ink2);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.65}
+a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+header.site{max-width:780px;margin:0 auto;padding:22px 20px}
+header.site a{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:700;font-size:19px;letter-spacing:-.01em}
+header.site img{width:36px;height:36px;border-radius:9px}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 48px}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:16px;padding:clamp(24px,5vw,40px)}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+h1{margin:0 0 6px;color:var(--ink);font-size:clamp(26px,6vw,34px);line-height:1.2;letter-spacing:-.015em}
+h2{margin:30px 0 6px;color:var(--ink);font-size:18px;line-height:1.35}
+h3{margin:24px 0 4px;color:var(--ink);font-size:16px}
+.updated{color:var(--muted);font-size:14px;margin:0 0 20px}
+p,li,dd{font-size:16px}.lede{font-size:17px;color:var(--ink2)}ul{padding-left:22px}strong{color:var(--ink);font-weight:700}
+dl{margin:0}dt{margin:24px 0 4px;color:var(--ink);font-weight:700;font-size:16px}dd{margin:0}
+.contact{background:var(--deep);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+.contact .big{font-size:20px;font-weight:700}
+nav.docnav{display:flex;flex-wrap:wrap;gap:18px;margin-top:32px;padding-top:18px;border-top:1px solid var(--line);font-size:15px}
+footer.site{max-width:780px;margin:0 auto;padding:8px 20px 44px;text-align:center;color:var(--muted);font-size:13px}
+footer.site .by{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.3em;color:var(--accent);margin:0 0 6px}
+footer.site .lockup{display:inline-block;margin:0 0 14px}footer.site .lockup img{width:230px;height:auto;display:block}
+footer.site a{color:var(--ink2)}
+.hero{text-align:center;padding:5vh 0 8px}
+.hero img.icon{width:112px;height:112px;border-radius:26px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.hero h1{font-size:clamp(38px,9vw,56px);margin:18px 0 6px}
+.hero .tag{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0}
+.hero .lede{max-width:580px;margin:18px auto 0}
+.soon{display:inline-block;margin-top:26px;border:1px dashed var(--line);border-radius:999px;padding:8px 18px;font-size:14px;color:var(--ink2)}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid var(--line);color:var(--ink);background:var(--raised)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:34px 0 0;padding:0;list-style:none}
+.facts li{background:var(--raised);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px}
+.facts b{display:block;color:var(--ink);font-size:16px;margin-bottom:2px}
 </style>
 </head>
 <body>
-<header class="site"><a class="logo" href="/fullhouse/">Full House <span class="suit">♥</span></a></header>
+<header class="site"><a href="/fullhouse/"><img src="/fullhouse/assets/icon-256.png" alt="" width="36" height="36">Full House</a></header>
 <main class="wrap">
 <article class="card">
+  <p class="eyebrow">Full House</p>
   <h1>Terms of Service</h1>
-  <p class="updated">Last updated: October 7, 2026</p>
-
-  <p class="lede">Welcome to Full House. These Terms of Service ("Terms") are a legal agreement between you and <strong>Finlock Accounting LLC</strong> (doing business as <strong>Pythn Development</strong>) ("we", "us") governing your use of the Full House game (the "Game"). By downloading or playing the Game, you agree to these Terms. If you do not agree, please do not use the Game.</p>
-
-  <h2>1. Who can play</h2>
-  <p>Full House is a cozy card roguelike for everyone. It contains <strong>no gambling</strong>: nothing is ever wagered, there is no real-money play, and there are no cash prizes. If you are under the age of majority where you live, you need a parent or guardian's permission to make purchases.</p>
-
-  <h2>2. No accounts; your save lives on your device</h2>
-  <p>Full House is a single-player game with <strong>no user accounts and no sign-in</strong>. All game progress is stored locally on your device. Progress does not sync or transfer between devices, and if you delete the app your local progress is lost. The exception is non-consumable purchases, which are tied to your Apple App Store or Google Play account and can be restored (see Section 5). You can permanently erase your local save at any time via the <em>More</em> tab → <em>Reset save</em>.</p>
-
-  <h2>3. License</h2>
-  <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable license to use the Game for your own non-commercial entertainment, subject to these Terms and the rules of the app store you downloaded it from.</p>
-
-  <h2>4. Virtual items have no real-world value — this is not gambling</h2>
-  <p><strong>Full House is a game.</strong> Cash, Gold, Gems, Crowns, Trophies, Regulars, Decks, Tables, cosmetics, tokens and all other in-game items and currencies (collectively, "Virtual Items") are part of the game only. They:</p>
+  <p class="updated">Last updated: October 15, 2026</p>
+  <p class="lede">These Terms of Service (&quot;Terms&quot;) are a legal agreement between you and Finlock Accounting LLC (doing business as Pythn Development) (&quot;we&quot;, &quot;us&quot;) governing your use of the Full House game (the &quot;Game&quot;).</p>
+  <h2>1. Acceptance</h2>
+  <p>By downloading or playing Full House, you agree to these Terms. If you do not agree, do not use the Game.</p>
+  <h2>2. The game</h2>
+  <p>Full House is a single-player, cozy card roguelike for all players. You build card hands to score Points × Mult, hire quirky &quot;Regulars&quot;, and grow a Vault of Gold between runs. It contains no gambling: nothing is ever wagered, there is no real-money play, and there are no cash prizes.</p>
+  <h2>3. Who can play</h2>
+  <p>Full House is for all players. If you are under the age of majority where you live, you need a parent or guardian's permission to make purchases.</p>
+  <h2>4. No accounts; your save lives on your device</h2>
+  <p>Full House has no user accounts and no sign-in. All game progress is stored on your device. There is no cloud save of ours and we never receive your save; your device's own backup or transfer tools (for example iCloud or Google backup, or moving to a new phone) may include it, depending on your device settings. If you delete the app and have no such backup, your local progress is lost. One-time (non-consumable) purchases are tied to your Apple App Store or Google Play account and can always be restored (see Section 6). You can permanently erase your local save at any time via the More tab → Reset save.</p>
+  <h2>5. Virtual items — no real-world value</h2>
+  <p>Cash, Gold, Gems, Crowns, Trophies, Regulars, Decks, Tables, cosmetics, tokens and all other in-game items and currencies (&quot;Virtual Items&quot;) are part of the game only. They have no real-world monetary value, are not money or a money substitute, and cannot be redeemed, cashed out, or exchanged for real money, goods, or anything of value outside the Game. Virtual Items are licensed to you, not sold, and are non-transferable. We may create, modify, balance, or remove Virtual Items in updates.</p>
+  <h2>6. Purchases</h2>
+  <p>The Game is free to play and offers optional in-app purchases, processed by the Apple App Store or Google Play under their terms and payment policies. Purchases are optional. Gems buy a few helpers — Second Wind, hints, Vault Boost and streak shields — and you also earn Gems by playing. Nothing sold is random. The current catalog:</p>
   <ul>
-    <li>have <strong>no real-world monetary value</strong> and are not money or a money substitute;</li>
-    <li>cannot be redeemed, cashed out, or exchanged for real money, goods, or anything of value outside the Game;</li>
-    <li>are licensed to you, not sold or owned by you, and are non-transferable except within the Game where we allow it.</li>
+    <li>Gem packs (consumable): Handful 100 Gems ($0.99) · Pouch 330 ($2.99) · Purse 600 ($4.99) · Sack 1,300 ($9.99) · Chest 2,900 ($19.99) · Vault 8,000 ($49.99). Gems never expire.</li>
+    <li>Starter Pack ($2.99, one-time) — 400 Gems, the Sunrise card back and 2 Second Wind tokens.</li>
+    <li>Founder's Pass ($7.99, one-time, permanent) — 800 Gems plus the exclusive Royal Gold card back and Patron Gold table. It is NOT a subscription.</li>
+    <li>Midnight Deck ($1.99) and Velvet Table ($1.99) — cosmetic one-time purchases.</li>
   </ul>
-  <p>There is no opportunity to win real money or real-world prizes. We may create, manage, modify, balance, or remove Virtual Items in updates to the Game.</p>
-
-  <h2>5. In-app purchases</h2>
-  <p>The Game is free to play and offers optional in-app purchases. Every purchase is cosmetic or a convenience; nothing you can buy makes you stronger. The current catalog is:</p>
-  <ul>
-    <li><strong>Gem packs</strong> (consumable): Handful 100 Gems ($0.99) · Pouch 330 ($2.99) · Purse 600 ($4.99) · Sack 1,300 ($9.99) · Chest 2,900 ($19.99) · Vault 8,000 ($49.99). Gems never expire.</li>
-    <li><strong>Starter Pack</strong> ($2.99, one-time) &mdash; 400 Gems, the Sunrise card back and 2 Second Wind tokens.</li>
-    <li><strong>Founder's Pass</strong> ($7.99, one-time, permanent) &mdash; 800 Gems plus the exclusive Royal Gold card back and Patron Gold table. It is <em>not</em> a subscription.</li>
-    <li><strong>Midnight Deck</strong> ($1.99) and <strong>Velvet Table</strong> ($1.99) &mdash; cosmetic one-time purchases.</li>
-  </ul>
-  <p>Purchases are processed by the Apple App Store or Google Play and are subject to their terms and payment policies. One-time (non-consumable) purchases can be restored on a device using the same store account via <em>More tab → Restore purchases</em>; the Gems and tokens bundled with the Starter Pack and Founder's Pass are delivered once per purchase (including on a restore after a reset). Consumable Gem packs are delivered to the device they were bought on and are <strong>not restorable or transferable</strong>. Refunds are handled by Apple or Google according to their policies &mdash; see our <a href="/fullhouse/support">Support page</a> for how to request one. Except where required by law, purchases are final, and Virtual Items are non-refundable once delivered.</p>
-  <h2>6. Arena seasons, Daily Deal &amp; rewards</h2>
-  <p>The Game's Arena is a local, offline feature: you climb a seeded ladder of 12 named bot rivals whose scores track your own recent form. It is not live multiplayer, there is no online leaderboard, and you never play against real people. Seasons run for 3 days and settle locally on your device with in-game rewards (Gold, Gems, Trophies or Crowns). The Daily Deal is one shared seeded run per calendar day, based on your device's date. Quests, contracts, achievements and streaks reward Virtual Items only, and optional reminders are local notifications you can switch off in the More tab. All rewards are Virtual Items with no real-world value. We may change, rebalance, or end these features in updates to the Game.</p>
-  <h2>7. Acceptable use</h2>
-  <p>You agree not to:</p>
-  <ul>
-    <li>tamper with, manipulate, or falsify gameplay, saves, purchases, or Virtual Items;</li>
-    <li>reverse engineer, decompile, or attempt to extract source code or assets, except where the law allows;</li>
-    <li>use the Game for any unlawful purpose.</li>
-  </ul>
-
-  <h2>8. Availability &amp; changes</h2>
-  <p>We may update, change, suspend, or discontinue the Game or any feature at any time, and we may release updates that you need to install to keep playing. We are not liable if the Game is unavailable for any period.</p>
-
-  <h2>9. Disclaimers</h2>
-  <p>The Game is provided "as is" and "as available," without warranties of any kind, whether express or implied, including merchantability, fitness for a particular purpose, and non-infringement, to the fullest extent permitted by law.</p>
-
-  <h2>10. Limitation of liability</h2>
-  <p>To the maximum extent permitted by law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or Virtual Items, arising from your use of the Game. Nothing in these Terms limits liability that cannot be limited by law.</p>
-
-  <h2>11. Termination</h2>
-  <p>You may stop playing at any time, and you can erase your local save via the <em>More</em> tab → <em>Reset save</em> or by deleting the app (see the <a href="/fullhouse/privacy">Privacy Policy</a>). We may terminate this license if you breach these Terms. On termination, your license ends and any Virtual Items are forfeited.</p>
-
-  <h2>12. Changes to these Terms</h2>
-  <p>We may update these Terms from time to time. We will post the updated version here and revise the "Last updated" date. Continuing to play after changes take effect means you accept the updated Terms.</p>
-
-  <h2>13. Governing law</h2>
-  <p>These Terms are governed by the laws of the State of New York, United States, without regard to its conflict-of-laws rules. The app store's terms also apply to your download and use of the Game.</p>
-
-  <h2>14. Contact</h2>
-  <p>Questions about these Terms? Email <a href="mailto:support@pythn.app">support@pythn.app</a>.</p>
-
+  <p>One-time (non-consumable) purchases can be restored on a device using the same store account via the More tab → Restore purchases; the Gems and tokens bundled with the Starter Pack and Founder's Pass are delivered once per purchase (including on a restore after a reset). Consumable Gem packs are delivered to the device they were bought on and are not restorable or transferable. Refunds are handled by Apple or Google according to their policies; except where required by law, purchases are final and Virtual Items are non-refundable once delivered.</p>
+  <h2>7. What purchases do</h2>
+  <p>Cosmetics change only how the game looks. The helpers Gems buy (Second Wind, hints, Vault Boost and streak shields) work the same whether the Gems were bought or earned in play. Tables, Regulars, Decks, Crowns and levels can't be bought — they are earned by playing.</p>
+  <h2>8. Arena seasons &amp; rewards</h2>
+  <p>The Arena is a local, offline feature: you climb a seeded ladder of 12 named bot rivals whose scores track your own recent form. It is not live multiplayer, there is no online leaderboard, and you never play against real people. Seasons run for 3 days and settle on your device with in-game rewards (Gold, Gems, Trophies or Crowns) — all Virtual Items with no real-world value. We may change, rebalance, or end these features in updates.</p>
+  <h2>9. Daily deal, quests &amp; reminders</h2>
+  <p>The Daily Deal is one shared seeded run per calendar day, based on your device's date. Quests, contracts, achievements and streaks reward Virtual Items only. Optional reminders are local notifications scheduled on your device, only after you turn them on: at most two a day, between 9am and 9pm. You can switch each one off in the More tab at any time.</p>
+  <h2>10. License &amp; acceptable use</h2>
+  <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable license to use the Game for non-commercial entertainment, subject to these Terms and the rules of the app store you downloaded it from. You agree not to tamper with, manipulate, or falsify gameplay, saves, purchases, or Virtual Items; not to reverse engineer, decompile, or extract source code or assets except where the law allows; and not to use the Game for any unlawful purpose.</p>
+  <h2>11. Availability &amp; disclaimers</h2>
+  <p>We may update, change, suspend, or discontinue the Game or any feature at any time. The Game is provided &quot;as is&quot; and &quot;as available,&quot; without warranties of any kind, express or implied, to the fullest extent permitted by law. To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or Virtual Items.</p>
+  <h2>12. Termination</h2>
+  <p>You may stop playing at any time and can erase your local save via the More tab → Reset save or by deleting the app. We may terminate this license if you breach these Terms; on termination, your license ends and any Virtual Items are forfeited.</p>
+  <h2>13. Changes</h2>
+  <p>We may update these Terms from time to time. We will post the updated version with a new &quot;Last updated&quot; date. Continuing to play after changes take effect means you accept them.</p>
+  <h2>14. Governing law</h2>
+  <p>These Terms are governed by the laws of the State of New York, USA, without regard to conflict-of-laws rules. The app store's terms also apply to your download and use of the Game.</p>
+  <h2>15. Contact</h2>
+  <p>Full House is operated by Finlock Accounting LLC (d/b/a Pythn Development). Questions: <a href="mailto:support@pythn.app">support@pythn.app</a></p>
   <nav class="docnav">
-    <a href="/fullhouse/">Home</a><a href="/fullhouse/support">Support</a><a href="/fullhouse/privacy">Privacy Policy</a>
+    <a href="/fullhouse/">Home</a>
+    <a href="/fullhouse/support/">Support</a>
+    <a href="/fullhouse/privacy/">Privacy Policy</a>
   </nav>
 </article>
 </main>
-<footer class="site"><p>&copy; 2026 Full House &middot; made by <a href="https://pythn.app/">Pythn Development</a> &middot; <a href="mailto:support@pythn.app">support@pythn.app</a></p></footer>
+<footer class="site">
+  <p class="by">A game by</p>
+  <a class="lockup" href="https://pythn.app/" aria-label="Pythn Development"><img src="/fullhouse/assets/pythn-logo-dark.png" alt="Pythn Development" width="230" height="77"></a>
+  <p>&copy; 2026 Finlock Accounting LLC, doing business as Pythn Development &middot; <a href="mailto:support@pythn.app">support@pythn.app</a></p>
+</footer>
 </body>
 </html>

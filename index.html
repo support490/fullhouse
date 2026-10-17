@@ -3,41 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Full House — Cozy Poker Roguelike</title>
-<meta name="description" content="Full House is a cozy poker roguelike. Stack chips, hire quirky Regulars, build a compounding Vault, and climb forever.">
+<title>Full House — a cozy card roguelike</title>
+<meta name="description" content="Full House is a cozy card roguelike for all players: build hands, hire quirky Regulars, watch Points × Mult add up, and grow a Vault that keeps your progress between runs. By Pythn Development.">
+<link rel="canonical" href="https://support490.github.io/fullhouse/">
+<link rel="icon" href="/fullhouse/assets/icon-256.png">
+<meta name="theme-color" content="#0c1f1a">
 <style>
-:root{--felt:#0d5c3f;--felt-dark:#0a4a32;--cream:#faf8f2;--ink:#22302a;--muted:#5d6b63;--gold:#c9a227;--line:#e6e1d5;--link:#0d6b46}
+@font-face{font-family:'DM Sans';font-weight:400;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-400.ttf) format('truetype')}
+@font-face{font-family:'DM Sans';font-weight:500;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-500.ttf) format('truetype')}
+@font-face{font-family:'DM Sans';font-weight:700;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-700.ttf) format('truetype')}
+@font-face{font-family:'JetBrains Mono';font-weight:400;font-display:swap;src:url(/fullhouse/assets/fonts/JetBrainsMono-400.ttf) format('truetype')}
+:root{--surface:#0c1f1a;--raised:#0f2a22;--deep:#071512;--line:#22332f;--ink:#fff;--ink2:#cacecd;--muted:#9ea5a3;--accent:#5dcaa5;--gold:#f7c948;--on-accent:#0c1f1a}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--felt);background-image:radial-gradient(130% 120% at 50% 0%,#11704e 0%,var(--felt) 45%,var(--felt-dark) 100%);line-height:1.65;min-height:100vh}
-.wrap{max-width:760px;margin:0 auto;padding:8vh 20px 64px;text-align:center}
-.logo{font-weight:800;letter-spacing:.3px;color:var(--cream);font-size:clamp(34px,8vw,52px);margin:0}
-.logo .suit{color:var(--gold)}
-.tag{color:var(--gold);font-weight:600;letter-spacing:.5px;text-transform:uppercase;font-size:14px;margin:14px 0 0}
-.lede{color:rgba(250,248,242,.92);font-size:18px;max-width:560px;margin:18px auto 0}
-.btnrow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px}
-.btn{display:inline-block;text-decoration:none;padding:12px 20px;border-radius:11px;font-weight:600;font-size:15px}
-.btn.gold{background:var(--gold);color:#3a2e05}
-.btn.ghost{background:rgba(250,248,242,.08);color:var(--cream);border:1px solid rgba(250,248,242,.25)}
-.soon{display:inline-block;margin-top:30px;color:rgba(250,248,242,.75);font-size:14px;border:1px dashed rgba(250,248,242,.3);border-radius:999px;padding:8px 16px}
-footer{margin-top:48px;color:rgba(250,248,242,.7);font-size:13px}
-footer a{color:rgba(250,248,242,.92)}
+body{margin:0;background:var(--surface);background-image:radial-gradient(120% 70% at 50% -10%,#0f2a22 0%,var(--surface) 60%);min-height:100vh;color:var(--ink2);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.65}
+a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+header.site{max-width:780px;margin:0 auto;padding:22px 20px}
+header.site a{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:700;font-size:19px;letter-spacing:-.01em}
+header.site img{width:36px;height:36px;border-radius:9px}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 48px}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:16px;padding:clamp(24px,5vw,40px)}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+h1{margin:0 0 6px;color:var(--ink);font-size:clamp(26px,6vw,34px);line-height:1.2;letter-spacing:-.015em}
+h2{margin:30px 0 6px;color:var(--ink);font-size:18px;line-height:1.35}
+h3{margin:24px 0 4px;color:var(--ink);font-size:16px}
+.updated{color:var(--muted);font-size:14px;margin:0 0 20px}
+p,li,dd{font-size:16px}.lede{font-size:17px;color:var(--ink2)}ul{padding-left:22px}strong{color:var(--ink);font-weight:700}
+dl{margin:0}dt{margin:24px 0 4px;color:var(--ink);font-weight:700;font-size:16px}dd{margin:0}
+.contact{background:var(--deep);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+.contact .big{font-size:20px;font-weight:700}
+nav.docnav{display:flex;flex-wrap:wrap;gap:18px;margin-top:32px;padding-top:18px;border-top:1px solid var(--line);font-size:15px}
+footer.site{max-width:780px;margin:0 auto;padding:8px 20px 44px;text-align:center;color:var(--muted);font-size:13px}
+footer.site .by{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.3em;color:var(--accent);margin:0 0 6px}
+footer.site .lockup{display:inline-block;margin:0 0 14px}footer.site .lockup img{width:230px;height:auto;display:block}
+footer.site a{color:var(--ink2)}
+.hero{text-align:center;padding:5vh 0 8px}
+.hero img.icon{width:112px;height:112px;border-radius:26px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.hero h1{font-size:clamp(38px,9vw,56px);margin:18px 0 6px}
+.hero .tag{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0}
+.hero .lede{max-width:580px;margin:18px auto 0}
+.soon{display:inline-block;margin-top:26px;border:1px dashed var(--line);border-radius:999px;padding:8px 18px;font-size:14px;color:var(--ink2)}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid var(--line);color:var(--ink);background:var(--raised)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:34px 0 0;padding:0;list-style:none}
+.facts li{background:var(--raised);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px}
+.facts b{display:block;color:var(--ink);font-size:16px;margin-bottom:2px}
 </style>
 </head>
 <body>
+<header class="site"><a href="/fullhouse/"><img src="/fullhouse/assets/icon-256.png" alt="" width="36" height="36">Full House</a></header>
 <main class="wrap">
-  <h1 class="logo">Full House <span class="suit">♠♥♦♣</span></h1>
-  <p class="tag">Cozy Card Roguelike &middot; fun for everyone</p>
-  <p class="lede">Stack Points, hire quirky Regulars, and build a hand engine that snowballs. Grow your Vault, climb the Tables, and outplay a ladder of colorful bot rivals in offline 3-day Arena seasons &mdash; all single-player, all on your device, nothing ever wagered.</p>
-  <span class="soon">Coming soon to the App Store</span>
-  <div class="btnrow">
-    <a class="btn ghost" href="/fullhouse/support">Support</a>
-    <a class="btn ghost" href="/fullhouse/privacy">Privacy</a>
-    <a class="btn ghost" href="/fullhouse/terms">Terms</a>
-  </div>
-  <footer>
-    <p>Questions? <a href="mailto:support@pythn.app">support@pythn.app</a></p>
-    <p>&copy; 2026 Full House &middot; made by <a href="https://pythn.app/">Pythn Development</a>. All rights reserved.</p>
-  </footer>
+<section class="hero">
+  <img class="icon" src="/fullhouse/assets/icon-256.png" alt="Full House app icon" width="112" height="112">
+  <h1>Full House</h1>
+  <p class="tag">A cozy card roguelike for all players</p>
+  <p class="lede">Build five-card hands, hire quirky Regulars who bend the math, and watch Points × Mult add up. Grow a Vault that keeps your progress between runs, climb the Tables, play the shared Daily Deal, and out-score a ladder of colourful bot rivals in 3-day Arena seasons — all single-player, all on your device, nothing ever wagered.</p>
+  <span class="soon">Coming soon to the App Store and Google Play</span>
+  <div class="btnrow"><a class="btn primary" href="/fullhouse/support/">Support</a><a class="btn" href="/fullhouse/privacy/">Privacy</a><a class="btn" href="/fullhouse/terms/">Terms</a></div>
+  <ul class="facts">
+    <li><b>No ads, no accounts</b>Play straight away. Nothing about you is collected.</li>
+    <li><b>Purchases are optional</b>Gems are earned by playing too, and nothing sold is random.</li>
+    <li><b>Plays offline</b>Your progress stays on your device.</li>
+  </ul>
+</section>
 </main>
+<footer class="site">
+  <p class="by">A game by</p>
+  <a class="lockup" href="https://pythn.app/" aria-label="Pythn Development"><img src="/fullhouse/assets/pythn-logo-dark.png" alt="Pythn Development" width="230" height="77"></a>
+  <p>&copy; 2026 Finlock Accounting LLC, doing business as Pythn Development &middot; <a href="mailto:support@pythn.app">support@pythn.app</a></p>
+</footer>
 </body>
 </html>

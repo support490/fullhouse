@@ -4,90 +4,97 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Full House</title>
-<meta name="description" content="How Full House handles your information: everything stays on your device, and we collect nothing.">
+<meta name="description" content="How Full House handles your information: we collect nothing, and your progress stays on your device.">
+<link rel="canonical" href="https://support490.github.io/fullhouse/privacy/">
+<link rel="icon" href="/fullhouse/assets/icon-256.png">
+<meta name="theme-color" content="#0c1f1a">
 <style>
-:root{--felt:#0d5c3f;--felt-dark:#0a4a32;--cream:#faf8f2;--ink:#22302a;--muted:#5d6b63;--gold:#c9a227;--line:#e6e1d5;--link:#0d6b46}
+@font-face{font-family:'DM Sans';font-weight:400;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-400.ttf) format('truetype')}
+@font-face{font-family:'DM Sans';font-weight:500;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-500.ttf) format('truetype')}
+@font-face{font-family:'DM Sans';font-weight:700;font-display:swap;src:url(/fullhouse/assets/fonts/DMSans-700.ttf) format('truetype')}
+@font-face{font-family:'JetBrains Mono';font-weight:400;font-display:swap;src:url(/fullhouse/assets/fonts/JetBrainsMono-400.ttf) format('truetype')}
+:root{--surface:#0c1f1a;--raised:#0f2a22;--deep:#071512;--line:#22332f;--ink:#fff;--ink2:#cacecd;--muted:#9ea5a3;--accent:#5dcaa5;--gold:#f7c948;--on-accent:#0c1f1a}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--felt);background-image:radial-gradient(130% 120% at 50% 0%,#11704e 0%,var(--felt) 45%,var(--felt-dark) 100%);line-height:1.65}
-header.site{display:flex;align-items:center;gap:10px;padding:22px 20px;max-width:780px;margin:0 auto}
-.logo{font-weight:800;letter-spacing:.3px;color:var(--cream);font-size:19px;text-decoration:none}
-.logo .suit{color:var(--gold)}
-.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
-.card{background:var(--cream);border-radius:18px;padding:clamp(24px,5vw,40px);box-shadow:0 18px 40px rgba(0,0,0,.28)}
-h1{margin:0 0 4px;font-size:clamp(26px,6vw,32px);line-height:1.2}
-h2{margin:30px 0 8px;font-size:19px;color:var(--felt-dark)}
-.updated{color:var(--muted);font-size:14px;margin:0 0 18px}
-p,li{font-size:16px}a{color:var(--link)}ul{padding-left:22px}
-.lede{font-size:17px}
-table{width:100%;border-collapse:collapse;margin:8px 0}
-th,td{text-align:left;border:1px solid var(--line);padding:9px 12px;font-size:15px;vertical-align:top}
-th{background:#f1ede2}
-.note{background:#fff7e0;border:1px solid #f0e2b0;border-radius:12px;padding:14px 16px;font-size:15px;margin:16px 0}
-nav.docnav{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px;padding-top:18px;border-top:1px solid var(--line);font-size:15px}
-footer.site{max-width:780px;margin:0 auto;padding:22px 20px 44px;color:rgba(250,248,242,.7);font-size:13px;text-align:center}
-footer.site a{color:rgba(250,248,242,.92)}
+body{margin:0;background:var(--surface);background-image:radial-gradient(120% 70% at 50% -10%,#0f2a22 0%,var(--surface) 60%);min-height:100vh;color:var(--ink2);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.65}
+a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+header.site{max-width:780px;margin:0 auto;padding:22px 20px}
+header.site a{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:700;font-size:19px;letter-spacing:-.01em}
+header.site img{width:36px;height:36px;border-radius:9px}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 48px}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:16px;padding:clamp(24px,5vw,40px)}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+h1{margin:0 0 6px;color:var(--ink);font-size:clamp(26px,6vw,34px);line-height:1.2;letter-spacing:-.015em}
+h2{margin:30px 0 6px;color:var(--ink);font-size:18px;line-height:1.35}
+h3{margin:24px 0 4px;color:var(--ink);font-size:16px}
+.updated{color:var(--muted);font-size:14px;margin:0 0 20px}
+p,li,dd{font-size:16px}.lede{font-size:17px;color:var(--ink2)}ul{padding-left:22px}strong{color:var(--ink);font-weight:700}
+dl{margin:0}dt{margin:24px 0 4px;color:var(--ink);font-weight:700;font-size:16px}dd{margin:0}
+.contact{background:var(--deep);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:22px 0}
+.contact .big{font-size:20px;font-weight:700}
+nav.docnav{display:flex;flex-wrap:wrap;gap:18px;margin-top:32px;padding-top:18px;border-top:1px solid var(--line);font-size:15px}
+footer.site{max-width:780px;margin:0 auto;padding:8px 20px 44px;text-align:center;color:var(--muted);font-size:13px}
+footer.site .by{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.3em;color:var(--accent);margin:0 0 6px}
+footer.site .lockup{display:inline-block;margin:0 0 14px}footer.site .lockup img{width:230px;height:auto;display:block}
+footer.site a{color:var(--ink2)}
+.hero{text-align:center;padding:5vh 0 8px}
+.hero img.icon{width:112px;height:112px;border-radius:26px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.hero h1{font-size:clamp(38px,9vw,56px);margin:18px 0 6px}
+.hero .tag{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0}
+.hero .lede{max-width:580px;margin:18px auto 0}
+.soon{display:inline-block;margin-top:26px;border:1px dashed var(--line);border-radius:999px;padding:8px 18px;font-size:14px;color:var(--ink2)}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid var(--line);color:var(--ink);background:var(--raised)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:34px 0 0;padding:0;list-style:none}
+.facts li{background:var(--raised);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px}
+.facts b{display:block;color:var(--ink);font-size:16px;margin-bottom:2px}
 </style>
 </head>
 <body>
-<header class="site"><a class="logo" href="/fullhouse/">Full House <span class="suit">♠</span></a></header>
+<header class="site"><a href="/fullhouse/"><img src="/fullhouse/assets/icon-256.png" alt="" width="36" height="36">Full House</a></header>
 <main class="wrap">
 <article class="card">
+  <p class="eyebrow">Full House</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 7, 2026</p>
-
-  <p class="lede">Full House ("Full House", "we", "us", or "our") is a single-player cozy card roguelike for everyone. The short version of this policy: <strong>we do not collect any of your data.</strong> Full House has no accounts, no sign-in, and no servers of ours. Everything you do in the game stays on your device.</p>
-
+  <p class="updated">Last updated: October 15, 2026</p>
+  <p class="lede">The short version: we do not collect any of your data. Full House has no accounts, no sign-in, and no servers of ours. Everything you do in the game stays on your device.</p>
   <h2>1. Who we are</h2>
-  <p>The Full House app and this website are operated by <strong>Finlock Accounting LLC</strong>, doing business as <strong>Pythn Development</strong>. If you have any questions, contact us at <a href="mailto:support@pythn.app">support@pythn.app</a>.</p>
-
+  <p>The Full House app is operated by Finlock Accounting LLC, doing business as Pythn Development. Questions: <a href="mailto:support@pythn.app">support@pythn.app</a></p>
   <h2>2. Information we collect: none</h2>
-  <p>We do not collect, receive, store, or transmit any personal information. The app makes no network calls of its own. The only external communication from the app is in-app purchase processing by the Apple App Store or Google Play, which happens directly between your device and Apple or Google.</p>
-  <table>
-    <tr><th>Data</th><th>Where it lives</th><th>Who can see it</th></tr>
-    <tr><td>Game progress (Vault balance, Gold, Gems, Crowns, levels, quests, streaks, Compendium, Arena results, cosmetics, settings)</td><td>Stored locally on your device only.</td><td>Only you. It is never sent to us or anyone else.</td></tr>
-    <tr><td>Purchase history for in-app purchases</td><td>Held by Apple or Google as part of your App Store / Google Play account.</td><td>Apple or Google, under their own privacy policies. We do not receive your name, email, or payment details.</td></tr>
-  </table>
-  <div class="note"><strong>We do not track you,</strong> and the app contains no advertising, no analytics or diagnostics SDKs, and no third-party SDKs that collect data. If that ever changes in a future version, we will update this policy first and ask for your consent where required.</div>
-
-  <h2>2b. Reminders</h2>
-  <p>If you turn reminders on, the app schedules <strong>local notifications</strong> on your device (for example, when a new Daily Deal is ready). No notification service of ours is involved and nothing leaves your device. You can turn each reminder off in the More tab or in your device settings.</p>
-
-  <h2>3. No accounts, no sign-in, no cloud sync</h2>
+  <p>We do not collect, receive, store, or transmit any personal information. The app makes no network calls of its own; the only external communication is in-app purchase processing by the Apple App Store or Google Play, which happens directly between your device and Apple or Google.</p>
   <ul>
-    <li>Full House has <strong>no user accounts</strong> and no sign-in of any kind.</li>
-    <li>All progress is saved <strong>locally on your device</strong>. There is no cloud save and progress does not sync or transfer between devices.</li>
-    <li>If you delete the app, your local progress is deleted with it. The exception is one-time purchases (the Founder's Pass, Starter Pack and cosmetic items), which are tied to your Apple or Google account and can be restored via <em>Restore purchases</em> in the app's <em>More</em> tab.</li>
-    <li>Consumable Gem purchases are delivered to the device they were bought on and are not restorable or transferable.</li>
+    <li>Game progress (Vault balance, Gold, Gems, Crowns, levels, quests, streaks, Compendium, Arena results, cosmetics, settings) is stored on your device. It is never sent to us. Your device's own backup (for example iCloud or Google backup) may include it, under your device settings and Apple's or Google's policies.</li>
+    <li>Purchase history is held by Apple or Google as part of your App Store / Google Play account, under their own privacy policies. We do not receive your name, email, or payment details.</li>
   </ul>
-
-  <h2>4. In-app purchases</h2>
-  <p>Optional in-app purchases are processed entirely by the Apple App Store or Google Play. Their handling of your payment and account data is governed by their own privacy policies. The app only receives confirmation from the store that a purchase succeeded so it can unlock the item on your device.</p>
-
-  <h2>5. Deleting your data</h2>
-  <p>Because we hold no data about you, there is nothing for us to delete on our side — and there is no account to delete, because there are no accounts. To erase your local game data:</p>
-  <ul>
-    <li><strong>In the app:</strong> open the <em>More</em> tab → <em>Reset save</em>. This permanently wipes all local game data.</li>
-    <li><strong>Or simply delete the app</strong> from your device, which removes its local data.</li>
-  </ul>
-  <p>To manage or delete purchase records held by Apple or Google, use your App Store or Google Play account settings.</p>
-
-  <h2>6. Children's privacy</h2>
-  <p>Full House is suitable for all ages. It has no chat, no accounts, no ads and no data collection, so it collects no personal information from anyone &mdash; including children.</p>
-
-  <h2>7. Security</h2>
-  <p>Your game data never leaves your device, which removes most transmission and server-side risks. The data is protected by your device's own security (passcode, encryption, and OS protections), so we recommend keeping your device secured and up to date.</p>
-
-  <h2>8. Changes to this policy</h2>
-  <p>We may update this Privacy Policy from time to time — for example, if a future version of the game adds features that change how data is handled. We will post the new version here and update the "Last updated" date. Significant changes will be communicated in the app where appropriate.</p>
-
-  <h2>9. Contact us</h2>
-  <p>Questions about this policy? Email <a href="mailto:support@pythn.app">support@pythn.app</a>.</p>
-
+  <h2>3. No ads, no analytics, no tracking</h2>
+  <p>We do not track you. The app contains no advertising, no analytics or diagnostics SDKs, and no third-party SDKs that collect data. If that ever changes in a future version, we will update this policy first and ask for your consent where required.</p>
+  <h2>4. Reminders</h2>
+  <p>Reminders are off until you turn them on. If you do, the app schedules local notifications on your device (for example, when a new Daily Deal is ready) — at most two a day, between 9am and 9pm. No notification service of ours is involved and nothing leaves your device. You can turn each reminder off in the More tab or in your device settings.</p>
+  <h2>5. No accounts, no sign-in, no cloud save of ours</h2>
+  <p>Full House has no user accounts and no sign-in of any kind. All progress is saved on your device; there is no cloud save of ours and no sync between devices. Your device's own backup or transfer tools may carry the save to a new device; without them, deleting the app deletes your progress. One-time purchases (the Founder's Pass, Starter Pack and cosmetic items) are tied to your Apple or Google account and can always be restored via Restore purchases in the More tab.</p>
+  <h2>6. In-app purchases</h2>
+  <p>Optional purchases are processed entirely by the Apple App Store or Google Play, governed by their privacy policies. The app only receives confirmation from the store that a purchase succeeded so it can unlock the item on your device.</p>
+  <h2>7. Deleting your data</h2>
+  <p>Because we hold no data about you, there is nothing for us to delete on our side — and there is no account to delete, because there are no accounts. To erase your local game data: open the More tab → Reset save (permanently wipes all local game data), or simply delete the app from your device. To manage purchase records held by Apple or Google, use your App Store or Google Play account settings.</p>
+  <h2>8. Children</h2>
+  <p>Full House is for all players. It has no chat, no accounts, no ads and no data collection, so it collects no personal information from anyone — including children.</p>
+  <h2>9. Security</h2>
+  <p>Your game data is never sent to us, which removes most transmission and server-side risks. The data is protected by your device's own security (passcode, encryption, OS protections), so keep your device secured and up to date.</p>
+  <h2>10. Changes</h2>
+  <p>We may update this policy from time to time — for example, if a future version adds features that change how data is handled. We will post the new version with a new &quot;Last updated&quot; date.</p>
+  <h2>11. Contact</h2>
+  <p>Full House is operated by Finlock Accounting LLC (d/b/a Pythn Development). Questions: <a href="mailto:support@pythn.app">support@pythn.app</a></p>
   <nav class="docnav">
-    <a href="/fullhouse/">Home</a><a href="/fullhouse/support">Support</a><a href="/fullhouse/terms">Terms of Service</a>
+    <a href="/fullhouse/">Home</a>
+    <a href="/fullhouse/support/">Support</a>
+    <a href="/fullhouse/terms/">Terms of Service</a>
   </nav>
 </article>
 </main>
-<footer class="site"><p>&copy; 2026 Full House &middot; made by <a href="https://pythn.app/">Pythn Development</a> &middot; <a href="mailto:support@pythn.app">support@pythn.app</a></p></footer>
+<footer class="site">
+  <p class="by">A game by</p>
+  <a class="lockup" href="https://pythn.app/" aria-label="Pythn Development"><img src="/fullhouse/assets/pythn-logo-dark.png" alt="Pythn Development" width="230" height="77"></a>
+  <p>&copy; 2026 Finlock Accounting LLC, doing business as Pythn Development &middot; <a href="mailto:support@pythn.app">support@pythn.app</a></p>
+</footer>
 </body>
 </html>
